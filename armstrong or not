@@ -1,0 +1,20 @@
+//2.Write a program to print given number is armstrong number or not
+#include<stdio.h>
+int main()
+{
+	int n, rem, sum, temp;
+	sum=0;
+	printf("Enter a positive number: ");
+	scanf("%d", &n);
+	temp=n;
+	while(n>0)
+	{
+		rem=n%10;
+		sum=sum+(rem*rem*rem);
+		n=n/10;
+	}
+	if(temp==sum)
+	printf("%d is Armstrong Number ",temp);
+	else
+	printf("%d is Not Armstrong Number ",temp);
+}
