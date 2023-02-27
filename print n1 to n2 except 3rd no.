@@ -1,0 +1,17 @@
+//print n1 to n2 odd numbers except 3rd number in the range.
+//Read n1 and n2 from the user
+#include<stdio.h>
+int main()
+{
+	int n1,n2,i;
+	n1=10;
+	n2=20;
+	for(i=n1;i<=n2;i++)
+	{
+		if(i%2!=0)
+		{
+			printf("%d\t", i);
+		}
+		
+	}
+}
