@@ -1,0 +1,24 @@
+//1.Write a program to read an age of 20 persons and find out how many of them fall under, 1.baby,2.school age,3.adult age
+#include<stdio.h>
+void main()
+{
+    int age;
+    int baby,school,adult;
+    baby=0,school=0;adult=0;
+    int count=0;
+    while(count<20)
+	{
+	printf("Enter the number of persons age:");
+	scanf("%d",&age);
+	if(age>=0&&age<=5)
+	    baby++;
+	else if(age>=6&&age<=15)
+	    school++;
+	else
+	    adult++;
+		count++;
+	}
+	printf("Baby age:%d\n",baby); 
+	printf("Schooling age:%d\n",school); 
+	printf("Adult age:%d\n",adult); 
+}
