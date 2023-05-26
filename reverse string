@@ -1,0 +1,12 @@
+//2.Write a program to reverse the given string and print both strings
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+	char str[100];
+	printf("Enter a string:");
+	gets(str);
+	strrev(str);
+	printf("Reverse string  is %s",str);
+
+}
