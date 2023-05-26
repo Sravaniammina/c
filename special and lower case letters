@@ -1,0 +1,27 @@
+//1.Find how many number of special and lower case letter characters are there in the given string
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+	char str[100],ch;
+	int i,lwr,spl;
+	i=0;
+	lwr=0;
+	spl=0;
+	printf("Enter a given string:");
+	scanf("%d",&str);
+	for(i=0;str[i]!='\0';i++)
+	{
+		if(str[i]>='a'&&str[i]<='z')
+		{
+		lwr++;
+		}
+		else
+		{
+			spl++;
+		}
+	}
+	printf("\nLower Case letters:%d",lwr);
+	printf("\nSpecial letters:%d",spl);
+
+}
